@@ -1,0 +1,62 @@
+    1  man cd
+    2  man -k
+    3  man
+    4  man file
+    5  man cd
+    6  man ls
+    7  cd
+    8  mkdir prog01
+    9  cd prog01
+   10  pwd
+   11  pwd > path.txt
+   12  ls
+   13  pr path.txt
+   14  more path.txt
+   15  man more
+   16  pr path.txt
+   17  touch testFile
+   18  ls
+   19  move test.txt
+   20  more test.txt
+   21  ls
+   22  ls -la
+   23  rm testFile
+   24  rm test.txt
+   25  ls -la
+   26  prog01
+   27  vi test.txt
+   28  nano text.txt
+   29  history
+   30  ls
+   31  history > history.txt
+   32  history.txt
+   33  pr history.txt
+   34  nano history.txt
+   35  more history.txt
+   36  ls
+   37  git push history.txt
+   38  apt install git
+   39  sudo gnome-terminal
+   40  sudo
+   41  sudo git push
+   42  logout
+   43  su paweladmin
+   44  ls
+   45  mkdir git_workspace
+   46  git --version
+   47  git config --global user.name "pawel12123"
+   48  git config --global user.email "plinek@rocketmail.com"
+   49  git config --list
+   50  ls -al
+   51  gedit .gitconfig
+   52  nano .gitconfig
+   53  cd git_workspace
+   54  git clone https://github.com/pawel12123/ubuntu
+   55  ls
+   56  cd ubuntu
+   57  ls
+   58  mkdir prog1
+   59  ls
+   60  cd prog1
+   61  history
+   62  history > history.txt

@@ -63,7 +63,7 @@ void find_primes1(char* name, int amount)
         }
         //Addresses the case that the user asks for the first prime number
         if(amount == 1){
-            printf("The first prime number is ", primes[0]);
+            printf("The first prime number is ");
         }
         //Converts output message from "There are 4", to "There re four" as long as number is below 20.
         else if(amount < 20){
@@ -77,7 +77,7 @@ void find_primes1(char* name, int amount)
         for(int i = 0; i < count; i++){
             printf("%d", primes[i]);
             if(count - i == 1){
-                printf(".");
+                printf(".\n");
             }
             else{
             printf(",");
@@ -89,7 +89,7 @@ void find_primes1(char* name, int amount)
 void find_primes2(char* name, int lower, int upper, int pos)
 {
     if(lower < 1 && upper < 1){
-        printf("Both of %s's arguments aren't strictly positive integers", name);
+        printf("Both of %s's arguments aren't strictly positive integers.\n", name);
     }
     else if(lower < 1){
         if(pos == 1){
@@ -112,17 +112,19 @@ void find_primes2(char* name, int lower, int upper, int pos)
         int primes[40000];
 
         for(int i = lower; i < upper; i++){
-            if(prime(i) == 0){
-                primes[count] = i;
-                count++;
+            if(i != 1){
+                if(prime(i) == 0){
+                    primes[count] = i;
+                    count++;
+                }
             }
         }
         if(count < 1){
-            printf("There is no prime number between %d and %d.", lower, upper);
+            printf("There is no prime number between %d and %d.\n", lower, upper);
 
         }
         else if(count == 1){
-            printf("There is only one prime number between %d and %d: %d ", lower, upper, primes[0]);
+            printf("There is only one prime number between %d and %d: %d\n", lower, upper, primes[0]);
         }
         else if(count > 1 && count < 20){
             char* numList[] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten","eleven","twelve", "thirteen", "fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
@@ -135,7 +137,7 @@ void find_primes2(char* name, int lower, int upper, int pos)
             for(int i = 0; i < count; i++){
                 printf("%d", primes[i]);
                 if(count - i == 1){
-                    printf(".");
+                    printf(".\n");
                 }
                 else{
                     printf(", ");
